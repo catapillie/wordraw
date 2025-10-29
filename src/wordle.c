@@ -36,7 +36,10 @@ wordle_encoded_t wordle_play(
             row[i] = CELL_GREEN;
             continue;
         }
+    }
 
+    for (int i = 0; i < WORDLE_WIDTH; i++)
+    {
         for (int j = 0; j < WORDLE_WIDTH; j++)
         {
             if (remain[j] == guess[i])
